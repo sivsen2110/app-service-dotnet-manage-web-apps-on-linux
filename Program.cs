@@ -1,4 +1,4 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using Microsoft.Azure.Management.AppService.Fluent;
@@ -44,7 +44,7 @@ namespace ManageLinuxWebAppBasic
                         .WithRegion(Region.USWest)
                         .WithNewResourceGroup(rg1Name)
                         .WithNewLinuxPlan(PricingTier.StandardS1)
-                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9_3)
+                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9)
                         .Create();
 
                 Utilities.Log("Created web app " + app1.Name);
@@ -59,7 +59,7 @@ namespace ManageLinuxWebAppBasic
                         .Define(app2Name)
                         .WithExistingLinuxPlan(plan)
                         .WithExistingResourceGroup(rg1Name)
-                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9_3)
+                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9)
                         .Create();
 
                 Utilities.Log("Created web app " + app2.Name);
@@ -74,7 +74,7 @@ namespace ManageLinuxWebAppBasic
                         .Define(app3Name)
                         .WithExistingLinuxPlan(plan)
                         .WithNewResourceGroup(rg2Name)
-                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9_3)
+                        .WithBuiltInImage(RuntimeStack.NodeJS_6_9)
                         .Create();
 
                 Utilities.Log("Created web app " + app3.Name);
