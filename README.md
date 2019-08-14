@@ -1,7 +1,9 @@
 ---
 page_type: sample
-languages: java
-products: azure
+languages:
+- java
+products:
+- azure
 services: App-Service
 platforms: dotnet
 author: yaohaizh
@@ -27,9 +29,9 @@ Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an aut
     git clone https://github.com/Azure-Samples/app-service-dotnet-manage-web-apps-on-linux.git
 
     cd app-service-dotnet-manage-web-apps-on-linux
-  
+
     dotnet build
-    
+
     bin\Debug\net452\ManageLinuxWebAppBasic.exe
 
 ## More information ##
